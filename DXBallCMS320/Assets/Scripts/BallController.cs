@@ -24,6 +24,11 @@ public class Ball : MonoBehaviour
             direction.y = -direction.y;
         else if (collison.gameObject.CompareTag("Wall"))
             direction.x = -direction.x;
+        else if (collison.gameObject.CompareTag("Floor"))
+        {
+            
+        }
+        //run the game over function here
         else
         {
             direction.y = -direction.y;
