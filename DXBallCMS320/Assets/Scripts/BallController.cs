@@ -5,11 +5,14 @@ public class Ball : MonoBehaviour
     Rigidbody2D rb;
     public float speed;
     public Vector2 direction;
+    public int brickCount;
+    public ScoreManager score;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         direction = Vector2.one.normalized; //(1,1)
+        score = GameObject.FindGameObjectWithTag("logic").GetComponent<ScoreManager>();
     }
 
     // Update is called once per frame
@@ -26,13 +29,18 @@ public class Ball : MonoBehaviour
             direction.x = -direction.x;
         else if (collison.gameObject.CompareTag("Floor"))
         {
-            
+            Debug.Log("Game Over!");
+            gameObject.SetActive(false);
+            score.AddScore(0);
         }
         //run the game over function here
         else
         {
             direction.y = -direction.y;
             Destroy(collison.gameObject);
+            brickCount++;
+            Debug.Log("Brick Count: " + brickCount);
+            score.AddScore(1);
         }
             
     }

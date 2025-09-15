@@ -10,6 +10,7 @@ TagManager:
   - Wall
   - Ceiling
   - Floor
+  - Logic
   layers:
   - Default
   - TransparentFX
