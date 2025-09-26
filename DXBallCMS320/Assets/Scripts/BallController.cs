@@ -33,7 +33,6 @@ public class Ball : MonoBehaviour
             gameObject.SetActive(false);
             score.AddScore(0);
         }
-        //run the game over function here
         else
         {
             direction.y = -direction.y;
