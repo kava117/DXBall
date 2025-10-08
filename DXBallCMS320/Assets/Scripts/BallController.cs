@@ -6,13 +6,13 @@ public class Ball : MonoBehaviour
     public float speed;
     public Vector2 direction;
     public int brickCount;
-    public ScoreManager score;
+    private ScoreManager score;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         direction = Vector2.one.normalized; //(1,1)
-        score = GameObject.FindGameObjectWithTag("logic").GetComponent<ScoreManager>();
+        score = GameObject.FindGameObjectWithTag("Logic").GetComponent<ScoreManager>();
     }
 
     // Update is called once per frame

@@ -538,7 +538,7 @@ Transform:
   m_GameObject: {fileID: 539457834}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.35, y: 0.45, z: 0}
+  m_LocalPosition: {x: 9.4, y: 0.45, z: 0}
   m_LocalScale: {x: 1, y: 11, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -651,7 +651,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -327.4, y: 152.2}
+  m_AnchoredPosition: {x: -808, y: 487}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &548247264
@@ -1660,7 +1660,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 154}
+  m_AnchoredPosition: {x: 805, y: 484}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1170507367
@@ -2009,10 +2009,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f15fb9fe30a93b247b3dc0caf69173ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ball
-  speed: 11
+  speed: 10
   direction: {x: 0, y: 0}
   brickCount: 0
-  score: {fileID: 0}
 --- !u!1 &1714465226
 GameObject:
   m_ObjectHideFlags: 0
@@ -2178,7 +2177,7 @@ Transform:
   m_GameObject: {fileID: 1869332436}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.35, y: 0.45, z: 0}
+  m_LocalPosition: {x: -9.4, y: 0.45, z: 0}
   m_LocalScale: {x: 1, y: 11, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2305,7 +2304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -2610,8 +2609,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2844,6 +2843,18 @@ PrefabInstance:
       value: Ball
       objectReference: {fileID: 0}
     - target: {fileID: 1889172253761975226, guid: df0f81799a0028144953389498cb0969, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 1889172253761975226, guid: df0f81799a0028144953389498cb0969, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 1889172253761975226, guid: df0f81799a0028144953389498cb0969, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1889172253761975226, guid: df0f81799a0028144953389498cb0969, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.07
       objectReference: {fileID: 0}
@@ -2883,6 +2894,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1889172253761975226, guid: df0f81799a0028144953389498cb0969, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8926496088311024894, guid: df0f81799a0028144953389498cb0969, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -3603556060819865620, guid: 96185e611194aa04da7400a4b56a33c7, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2905,13 +2924,49 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 523044537257575724, guid: 6d05cfee8ff2a5546b37a29129e04d97, type: 3}
+      propertyPath: m_Size.x
+      value: 14.874105
+      objectReference: {fileID: 0}
+    - target: {fileID: 523044537257575724, guid: 6d05cfee8ff2a5546b37a29129e04d97, type: 3}
+      propertyPath: m_Size.y
+      value: 5.59076
+      objectReference: {fileID: 0}
+    - target: {fileID: 523044537257575724, guid: 6d05cfee8ff2a5546b37a29129e04d97, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.01700306
+      objectReference: {fileID: 0}
+    - target: {fileID: 523044537257575724, guid: 6d05cfee8ff2a5546b37a29129e04d97, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.000022649765
+      objectReference: {fileID: 0}
+    - target: {fileID: 523044537257575724, guid: 6d05cfee8ff2a5546b37a29129e04d97, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 14.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 523044537257575724, guid: 6d05cfee8ff2a5546b37a29129e04d97, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 3.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 4299494558256086244, guid: 6d05cfee8ff2a5546b37a29129e04d97, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6cb2d9fad90a3fb47a7847f918339655, type: 3}
     - target: {fileID: 5839708852876283372, guid: 6d05cfee8ff2a5546b37a29129e04d97, type: 3}
       propertyPath: displacement
-      value: 0.1
+      value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: 6500746584513002391, guid: 6d05cfee8ff2a5546b37a29129e04d97, type: 3}
       propertyPath: m_Name
       value: Paddle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8371516157708559793, guid: 6d05cfee8ff2a5546b37a29129e04d97, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8371516157708559793, guid: 6d05cfee8ff2a5546b37a29129e04d97, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 8371516157708559793, guid: 6d05cfee8ff2a5546b37a29129e04d97, type: 3}
       propertyPath: m_LocalPosition.x
