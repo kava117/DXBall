@@ -11,6 +11,8 @@ TagManager:
   - Ceiling
   - Floor
   - Logic
+  - Brick
+  - Music
   layers:
   - Default
   - TransparentFX
