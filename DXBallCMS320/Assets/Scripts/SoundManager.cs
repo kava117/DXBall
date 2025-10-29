@@ -1,5 +1,5 @@
 using UnityEngine;
-public class AudioManager : MonoBehaviour
+public class SoundManager : MonoBehaviour
 {
 [SerializeField] AudioSource musicSource;
 [SerializeField] AudioSource sfxSource;

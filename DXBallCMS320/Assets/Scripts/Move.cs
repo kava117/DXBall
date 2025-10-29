@@ -1,17 +1,18 @@
+using Unity.VisualScripting;
 using UnityEngine;
 public class move : MonoBehaviour
 {
     Rigidbody2D pad;
     Vector2 initial;
-    AudioManager audioManager;
+    [SerializeField] SoundManager soundManager;
     public float displacement;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         pad = GetComponent<Rigidbody2D>();
         initial = pad.transform.localPosition;
-        audioManager =
-        GameObject.FindGameObjectWithTag("music").GetComponent<AudioManager>();
+        soundManager =
+        GameObject.FindGameObjectWithTag("music").GetComponent<SoundManager>();
     }
     // Update is called once per frame
     void Update()
@@ -34,7 +35,7 @@ public class move : MonoBehaviour
         if (collision.gameObject.CompareTag("brick"))
         {
             Debug.Log("Stumble Sound");
-            audioManager.PlaySXF(audioManager.stumbleSound);
+            soundManager.PlaySXF(soundManager.stumbleSound);
         }
 
     }
